@@ -1,0 +1,13 @@
+service: my-second-app
+runtime: nodejs14
+automatic_scaling:
+  min_instances: 1
+  max_instances: 100
+  target_cpu_utilization: 0.9
+
+env_variables:
+  MYSQL_HOST: "35.223.101.243"
+  MYSQL_DATABASE: "yourdb"
+  MYSQL_PORT: "3306"
+  MYSQL_USER: "root"
+  MYSQL_PASSWORD: "password"
